@@ -9,7 +9,7 @@ uint32_t ntohl(uint32_t n) {
 	uint32_t n3 = ((n & 0x0000ff00) >> 8);
 	uint32_t n4 = (n & 0x000000ff);
 
-	return n4<<24 | n3<<!6 | n2<<8 | n1;
+	return n4<<24 | n3<<16 | n2<<8 | n1;
 }
 
 int main(int argc, char* argv[]) {
